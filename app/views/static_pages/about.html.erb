@@ -9,3 +9,10 @@
   <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   This is the sample application for the tutorial.
 </p>
+
+
+<%= form_tag("/Search", method: "get") do %>
+<%= label_tag(:q, "Search for") %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Search") %>
+<% end %>
